@@ -1,0 +1,23 @@
+Initialize length := 0
+Initialize words := 1
+Initialize vowels := 0
+
+Read char
+
+WHILE char ≠ '.'
+    length := length + 1
+
+    IF char = ' ' THEN
+        words := words + 1
+    END_IF
+
+    IF char IN ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'] THEN
+        vowels := vowels + 1
+    END_IF
+
+    Read next char
+END_WHILE
+
+Print "Length: ", length + 1
+Print "Words: ", words
+Print "Vowels: ", vowels
